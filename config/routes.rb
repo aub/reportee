@@ -1,5 +1,7 @@
 Reportee::Application.routes.draw do
 
+  resources 'reports', :only => [:new]
+
   root :to => "home#index"
 
   # The priority is based upon order of creation:
